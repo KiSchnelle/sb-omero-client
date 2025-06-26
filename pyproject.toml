@@ -1,0 +1,21 @@
+[project]
+name = "sb_omero_client"
+version = "0.1.0"
+description = ""
+authors = [{ name = "Kilian Schnelle", email = "kischnelle@icloud.com" }]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "omero-py (>=5.21.0,<6.0.0)",
+    "zeroc-ice @ https://github.com/glencoesoftware/zeroc-ice-py-macos-universal2/releases/download/20240131/zeroc_ice-3.6.5-cp312-cp312-macosx_11_0_universal2.whl",
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.12.0"
+pytest = "^8.4.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
