@@ -5,10 +5,7 @@ description = ""
 authors = [{ name = "Kilian Schnelle", email = "kischnelle@icloud.com" }]
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = [
-    "omero-py (>=5.21.0,<6.0.0)",
-    "zeroc-ice @ https://github.com/glencoesoftware/zeroc-ice-py-macos-universal2/releases/download/20240131/zeroc_ice-3.6.5-cp312-cp312-macosx_11_0_universal2.whl",
-]
+dependencies = ["omero-py (>=5.21.0,<6.0.0)", "zeroc-ice @ https://github.com/glencoesoftware/zeroc-ice-py-macos-universal2/releases/download/20240131/zeroc_ice-3.6.5-cp312-cp312-macosx_11_0_universal2.whl ; sys_platform == \"darwin\""]
 
 [tool.poetry]
 

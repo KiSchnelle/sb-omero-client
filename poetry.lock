@@ -623,4 +623,4 @@ url = "https://github.com/glencoesoftware/zeroc-ice-py-macos-universal2/releases
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12"
-content-hash = "438abdd9e005aa59f865c8b741ad741d6f5f6dfcb1a02dba6b9593452e925f4e"
+content-hash = "47217c47b613d9df22957c6a1132e40daa8449e6f52bc66a5e1fd65d00572bc9"
