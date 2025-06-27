@@ -612,6 +612,23 @@ description = "Ice is a comprehensive RPC framework with support for Python, C++
 optional = false
 python-versions = "*"
 groups = ["main"]
+markers = "sys_platform != \"darwin\" or platform_machine != \"arm64\""
+files = [
+    {file = "zeroc_ice-3.6.5-cp312-cp312-manylinux_2_28_x86_64.whl", hash = "sha256:96fb9066912c52f2503e9f9207f98d51de79c475d19ebd3157aae7bc522b5826"},
+]
+
+[package.source]
+type = "url"
+url = "https://github.com/glencoesoftware/zeroc-ice-py-linux-x86_64/releases/download/20240202/zeroc_ice-3.6.5-cp312-cp312-manylinux_2_28_x86_64.whl"
+
+[[package]]
+name = "zeroc-ice"
+version = "3.6.5"
+description = "Ice is a comprehensive RPC framework with support for Python, C++, .NET, Java, JavaScript and more."
+optional = false
+python-versions = "*"
+groups = ["main"]
+markers = "sys_platform == \"darwin\" and platform_machine == \"arm64\""
 files = [
     {file = "zeroc_ice-3.6.5-cp312-cp312-macosx_11_0_universal2.whl", hash = "sha256:7b387fefd15acf05192464fccda4d5a5c37fddd15e8fb5cc509d787950b66e8a"},
 ]
@@ -623,4 +640,4 @@ url = "https://github.com/glencoesoftware/zeroc-ice-py-macos-universal2/releases
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12"
-content-hash = "47217c47b613d9df22957c6a1132e40daa8449e6f52bc66a5e1fd65d00572bc9"
+content-hash = "63777b6b1af8fb1274e6ba71fbd5dd8ba26443be0286d4119c0f132fcab463d5"
