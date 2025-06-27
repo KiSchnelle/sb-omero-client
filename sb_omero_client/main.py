@@ -24,6 +24,10 @@ def main(
             Path to config file.
 
     """
+    if not config_path.exists():
+        msg = f"Config file not found: {config_path}"
+        raise FileNotFoundError(msg)
+
     config = configparser.ConfigParser()
     config.read(config_path)
 
@@ -54,9 +58,6 @@ def main(
 
 if __name__ == "__main__":
     config_path = Path.home() / ".config" / "sb-omero-client" / "config.ini"
-    if not config_path.exists():
-        msg = f"Config file not found: {config_path}"
-        raise FileNotFoundError(msg)
 
     main(
         config_path=config_path,
